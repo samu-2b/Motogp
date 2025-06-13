@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+  #form2, #button2 {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  #divtot {
+    grid-template-columns: 1fr !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  #card1 {
+    width: 100% !important;
+  }
+}
+
+
+body {
+  color: rgb(255, 255, 255);
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+#divtot {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#form2 {
+  background-color: rgba(0, 0, 0, 0.025);
+  backdrop-filter: blur(5px);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 20px;
+  height: 330px;
+  transition: all 0.3s ease-in-out;
+  border-width: 1px;
+}
+
+#input2 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.116);
+  padding-left: 10px;
+  width: 140px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#label2 {
+  background-color: red;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#form2:hover {
+  scale: 1.05;
+  transition: 500ms;
+}
+
+#divform {
+  margin-top: 3px;
+  padding: 20px;
+}
+
+#button2 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  width: 320px;
+  height: 60px;
+  margin-left: -41px;
+  padding-bottom: 10px;
+  margin-top: 12px;
+  border-width: 0;
+}
+
+#button2:hover {
+  border-width: 0;
+}
+
+#card1 {
+  background-color: rgba(0, 0, 0, 0.025);
+  backdrop-filter: blur(7px);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+#imgcon1 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: all 1ms ease-in-out;
+}
+
+#card1:hover {
+  scale: 1.05;
+  scale: 1.05;
+}
+
+hr {
+  color: rgba(255, 0, 0, 0.329);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.014);
+  backdrop-filter: blur(10px);
+  margin-top: 60px;
+  padding: 15px;
+}
