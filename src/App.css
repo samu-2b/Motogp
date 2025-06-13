@@ -79,15 +79,15 @@ button {
 }
 
 .parallax:nth-child(1) {
-   background-image: url('wallpaper4.jpg');
+   background-image: url('/wallpaper4.jpg');
 }
 
 .parallax:nth-child(2) {
-   background-image: url('wallpaper2.jpg');
+   background-image: url('/wallpaper2.jpg');
 }
 
 .parallax:nth-child(3) {
-   background-image: url('wallpaper.jpg');
+   background-image: url('/wallpaper.jpg');
 }
 
 .content {
