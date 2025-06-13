@@ -30,7 +30,7 @@ function Scuderie() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:2000/insScuderie', {
+    fetch('https://motogp-y2is.onrender.com/insScuderie', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(addscuderia)
@@ -39,7 +39,7 @@ function Scuderie() {
       .then(data => {
         alert(data.success || data.message || 'Scuderia aggiunta');
 
-        fetch('http://localhost:2000/scuderie')
+        fetch('https://motogp-y2is.onrender.com/scuderie')
           .then(res => res.json())
           .then(data => setScuderia(data));
 
@@ -56,7 +56,7 @@ function Scuderie() {
   };
 
   useEffect(() => {
-    fetch('http://localhost:2000/scuderie')
+    fetch('https://motogp-y2is.onrender.com/scuderie')
       .then(res => res.json())
       .then(data => {
         console.log("Dati ricevuti:", data);

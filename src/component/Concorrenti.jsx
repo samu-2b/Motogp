@@ -31,7 +31,7 @@ function Concorrenti() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:2000/insConcorrenti', {
+    fetch('https://motogp-y2is.onrender.com/insConcorrenti', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(addconcorrente)
@@ -40,7 +40,7 @@ function Concorrenti() {
       .then(data => {
         alert(data.success || data.message || 'concorrente aggiunto');
 
-        fetch('http://localhost:2000/concorrenti')
+        fetch('https://motogp-y2is.onrender.com/concorrenti')
           .then(res => res.json())
           .then(data => setconcorrente(data));
 
@@ -57,7 +57,7 @@ function Concorrenti() {
   };
 
   useEffect(() => {
-    fetch('http://localhost:2000/concorrenti')
+    fetch('https://motogp-y2is.onrender.com/concorrenti')
       .then(res => res.json())
       .then(data => {
         console.log("Dati ricevuti:", data);
